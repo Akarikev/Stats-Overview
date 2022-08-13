@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/*font-family: 'Lexend Deca',
+sans-serif;
+*/
+
+.container {
+    margin: 0 auto;
+    padding: 0 60px;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.image-box {
+    display: flex;
+    margin-top: 50px;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    position: relative;
+}
+
+.box {
+    background: hsl(244, 38%, 16%);
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-top: 60px;
+    padding-right: 120px;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+.subtitle {
+    font-size: 15px;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+.title,
+.stats,
+.h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.subtitle {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+}
+
+.stats-sub {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.stats {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.stats-sub {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: .4;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+@media only screen and (max-width:728px) {
+    /*
+   
+    body {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    */
+    .box {
+        margin-top: 0;
+        text-align: center;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 11px;
+        padding: 20px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;
+        min-width: 375px;
+    }
+    .image-box {
+        order: -1;
+    }
+    .image-box img {
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 11px;
+    }
+    .title {
+        text-align: center;
+    }
+    .subtitle {
+        margin-top: 15px;
+    }
+    .stats,
+    .stats-sub {
+        text-align: center;
+        flex-direction: column;
+    }
+    .stats {
+        margin-top: 15px;
+    }
+    .h2 {
+        margin-top: 27px;
+    }
+    .stats-sub {
+        margin-top: 3px;
+    }
+    .image-box::after {
+        border-top-left-radius: 11px;
+    }
+}
+
+@media only screen and (min-width:740px) {
+    .stats {
+        margin-top: 7px;
+    }
+    .stats-sub {
+        font-size: 10px;
+    }
+    .subtitle {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .box {
+        padding: 35px;
+    }
+}
+
+@media only screen and (min-width:737px) {
+    .stats {
+        margin-top: 7px;
+    }
+    .stats-sub {
+        font-size: 10px;
+    }
+    .subtitle {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .box {
+        padding: 35px;
+    }
+}
+
+@media only screen and (min-width:735px) {
+    .stats {
+        margin-top: 7px;
+    }
+    .stats-sub {
+        font-size: 10px;
+    }
+    .subtitle {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .box {
+        padding: 35px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .stats {
+        margin-top: 10px;
+    }
+    .stats-sub {
+        font-size: 11px;
+    }
+    .subtitle {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .box {
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .stats {
+        margin-top: 10px;
+    }
+    .stats-sub {
+        font-size: 11px;
+    }
+    .subtitle {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    .box {
+        padding: 80px;
+    }
+}
