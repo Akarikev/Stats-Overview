@@ -25,7 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here]()
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/statsoverview-challenge-8GodHEXySq
+)
 - Live Site URL: [ live site URL here](https://frontendmentorstatso.netlify.app/)
 
 ## My process
